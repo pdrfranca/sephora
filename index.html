@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atalhos de Teclado - Acessibilidade</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navegação com teclas de atalho -->
+    <nav>
+        <a href="#home" accesskey="h">Home (Alt + H)</a>
+        <a href="#sobre" accesskey="s">Sobre (Alt + S)</a>
+        <a href="#contato" accesskey="c">Contato (Alt + C)</a>
+    </nav>
+
+    <!-- Seção Home -->
+    <section id="home" class="section">
+        <h1>Página Inicial</h1>
+        <p>Bem-vindo à nossa página com atalhos de teclado. Use as combinações de teclas para navegar entre as seções.</p>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="section">
+        <h2>Sobre</h2>
+        <p>Esta página foi desenvolvida para demonstrar o uso de atalhos de teclado com o atributo <code>accesskey</code> no HTML, facilitando a navegação e promovendo a acessibilidade.</p>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="section">
+        <h2>Contato</h2>
+        <p>Entre em contato conosco por meio dos canais abaixo.</p>
+        <form>
+            <label for="name">Nome: </label>
+            <input type="text" id="name" accesskey="n" placeholder="Seu nome (Alt + N)">
+            <br><br>
+            <label for="email">Email: </label>
+            <input type="email" id="email" accesskey="e" placeholder="Seu email (Alt + E)">
+            <br><br>
+            <button type="submit" accesskey="v">Enviar (Alt + V)</button>
+        </form>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2024 - Exemplo de Atalhos em Páginas Web</p>
+    </footer>
+
+</body>
+
+</html>
