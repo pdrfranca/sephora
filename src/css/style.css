@@ -268,7 +268,7 @@ header i {
 
 /* Seção de Cadastro */
 .section {
-    background: url("/assets/background.png");
+    background: url("https://pdrfranca.github.io/sephora/assets/background.png");
     background-repeat: no-repeat;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 50px;
