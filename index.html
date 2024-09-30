@@ -4,51 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atalhos de Teclado - Acessibilidade</title>
+    <title>Sephora - Cosméticos</title>
     <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="https://www.sephora.com.br/on/demandware.static/Sites-Sephora_BR-Site/-/default/dw050b524a/images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-
-    <!-- Navegação com teclas de atalho -->
-    <nav>
-        <a href="#home" accesskey="h">Home (Alt + H)</a>
-        <a href="#sobre" accesskey="s">Sobre (Alt + S)</a>
-        <a href="#contato" accesskey="c">Contato (Alt + C)</a>
-    </nav>
-
-    <!-- Seção Home -->
-    <section id="home" class="section">
-        <h1>Página Inicial</h1>
-        <p>Bem-vindo à nossa página com atalhos de teclado. Use as combinações de teclas para navegar entre as seções.</p>
-    </section>
-
-    <!-- Seção Sobre -->
-    <section id="sobre" class="section">
-        <h2>Sobre</h2>
-        <p>Esta página foi desenvolvida para demonstrar o uso de atalhos de teclado com o atributo <code>accesskey</code> no HTML, facilitando a navegação e promovendo a acessibilidade.</p>
-    </section>
-
-    <!-- Seção Contato -->
+    <header>
+        <div>
+            <img src="https://www.sephora.com.br/on/demandware.static/Sites-Sephora_BR-Site/-/default/dw551512c3/images/logo.gif"
+                alt="" id="logo">
+            <div class="busca">
+                <input type="text" placeholder="Busca (Alt+A)" accesskey="a">
+                <img src="https://www.sephora.com.br/on/demandware.static/Sites-Sephora_BR-Site/-/default/dw996750e0/images/svg/search-icon.svg" alt="">
+            </div>
+            <img src="https://www.sephora.com.br/on/demandware.static/Sites-Sephora_BR-Site/-/default/dwed795958/images/svg/customerservice-icon.svg" alt="">
+            <div class="txtI">
+                <img src="https://www.sephora.com.br/on/demandware.static/Sites-Sephora_BR-Site/-/default/dwba7f9b18/images/svg/store-icon.svg" alt="">
+                <p>Lojas e Serviços</p>
+            </div>
+            <img src="https://www.sephora.com.br/on/demandware.static/Sites-Sephora_BR-Site/-/default/dwcd453dfd/images/svg/heartborder-icon.svg" alt="">
+            <div class="txt">
+                <p>MINHA CONTA</p>
+            </div>
+            <div class="point">
+                <p>Pontos Beautyclub:</p>
+                <strong>Faça login e descubra</strong>
+            </div>
+            <img src="https://www.sephora.com.br/on/demandware.static/Sites-Sephora_BR-Site/-/default/dw12015c4e/images/svg/basket-icon.svg" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li>Maquiagem</li>
+                <li>Perfumes</li>
+                <li>Skincare</li>
+                <li>Cabelos</li>
+                <li>Só Na Sephora</li>
+                <li>Ofertas</li>
+                <li id="diffe"><img
+                        src="https://www.sephora.com.br/on/demandware.static/-/Sites-siteCatalog_Sephora_BR/pt_BR/dw761382fe/botao-hoje-tem.png"
+                        alt=""></li>
+                <li id="diffe"><img
+                        src="https://www.sephora.com.br/on/demandware.static/-/Sites-siteCatalog_Sephora_BR/pt_BR/dwce55354a/botao_posicionamento.png"
+                        alt=""></li>
+                <li id="diffe"><img
+                        src="https://www.sephora.com.br/on/demandware.static/-/Sites-siteCatalog_Sephora_BR/pt_BR/dw9029cd89/botao_sephoria.png"
+                        alt=""></li>
+                <li id="diff">MARCAS</li>
+            </ul>
+        </nav>
+    </header>
+    <div id="layer">
+        <img src="https://www.sephora.com.br/on/demandware.static/-/Library-Sites-Sephora/pt_BR/dwa51a54e7/Trade-Marketing/Home-Banners-Site-App/09-Setembro/24/20240924_sc_desk.jpg"
+            alt="">
+        <div class="nav-categories">
+            <a href="#">Só na Sephora</a>
+            <a href="#">Clean Beauty</a>
+            <a href="#">Sephora Premium</a>
+            <a href="#">Sephora Collection</a>
+            <a href="#">Novidades</a>
+            <a href="#">App Sephora</a>
+        </div>
+    </div>
+    <img class="container" src="assets/container.png" alt="Sephora banner">
     <section id="contato" class="section">
-        <h2>Contato</h2>
-        <p>Entre em contato conosco por meio dos canais abaixo.</p>
+        <h2>Cadastre-se e receba novidades!</h2>
+        <p>Saiba também das promoções em primeira mão</p>
         <form>
-            <label for="name">Nome: </label>
+            <label for="name">Nome:</label>
             <input type="text" id="name" accesskey="n" placeholder="Seu nome (Alt + N)">
-            <br><br>
-            <label for="email">Email: </label>
+            <label for="email">Email:</label>
             <input type="email" id="email" accesskey="e" placeholder="Seu email (Alt + E)">
-            <br><br>
-            <button type="submit" accesskey="v">Enviar (Alt + V)</button>
+            <button type="submit" accesskey="v">Cadastrar (Alt + V)</button>
         </form>
     </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 - Exemplo de Atalhos em Páginas Web</p>
-    </footer>
-
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>
